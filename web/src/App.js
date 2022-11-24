@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import FavoritesList from "./components/FavoritesList";
 
 class App extends React.Component {
   render() {
@@ -49,38 +50,7 @@ class App extends React.Component {
             </div>
           </nav>
           <footer className="footer">
-            <ul className="list-group" style={{}}>
-              <li className="list-group-item">
-                Miami Beach Florida
-                <button
-                  type="button"
-                  className="btn btn-default"
-                  style={{ display: "inline", float: "right" }}
-                >
-                  X
-                </button>
-              </li>
-              <li className="list-group-item">
-                Austin Texas
-                <button
-                  type="button"
-                  className="btn btn-default"
-                  style={{ display: "inline", float: "right" }}
-                >
-                  X
-                </button>
-              </li>
-              <li className="list-group-item">
-                Williamsburg Virginia
-                <button
-                  type="button"
-                  className="btn btn-default"
-                  style={{ display: "inline", float: "right" }}
-                >
-                  X
-                </button>
-              </li>
-            </ul>
+            <FavoritesList />
             <p contenteditable="true" spellcheckker="false">
               <div className="card" style={{ "margin-top": "30px" }}>
                 <div className="card" style={{ "margin-top": "0px" }}>
